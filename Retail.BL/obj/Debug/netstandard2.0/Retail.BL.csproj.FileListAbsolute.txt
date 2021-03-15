@@ -1,0 +1,12 @@
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\bin\Debug\netstandard2.0\Retail.BL.deps.json
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\bin\Debug\netstandard2.0\Retail.BL.dll
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\bin\Debug\netstandard2.0\Retail.BL.pdb
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.csprojAssemblyReference.cache
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.AssemblyInfoInputs.cache
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.AssemblyInfo.cs
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.csproj.CoreCompileInputs.cache
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.dll
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.pdb
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\bin\Debug\netstandard2.0\Retail.COMMON.dll
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\bin\Debug\netstandard2.0\Retail.COMMON.pdb
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.BL\obj\Debug\netstandard2.0\Retail.BL.csproj.CopyComplete

@@ -1,0 +1,9 @@
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\bin\Debug\netstandard2.0\Retail.COMMON.deps.json
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\bin\Debug\netstandard2.0\Retail.COMMON.dll
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\bin\Debug\netstandard2.0\Retail.COMMON.pdb
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\obj\Debug\netstandard2.0\Retail.COMMON.csprojAssemblyReference.cache
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\obj\Debug\netstandard2.0\Retail.COMMON.AssemblyInfoInputs.cache
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\obj\Debug\netstandard2.0\Retail.COMMON.AssemblyInfo.cs
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\obj\Debug\netstandard2.0\Retail.COMMON.csproj.CoreCompileInputs.cache
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\obj\Debug\netstandard2.0\Retail.COMMON.dll
+D:\installed programs\visual studio\projects\Retail\Retail\Retail.COMMON\obj\Debug\netstandard2.0\Retail.COMMON.pdb

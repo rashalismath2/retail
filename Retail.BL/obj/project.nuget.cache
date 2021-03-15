@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "egLWYp6Cq7dpXm/QYqJIXZq6FEDg/LFiNKyJrWFOtER0+h8L9ges4Lsk3d1dVP0APK/Hr1BX4TFI/Mzce47snQ==",
+  "success": true,
+  "projectFilePath": "D:\\installed programs\\visual studio\\projects\\Retail\\Retail\\Retail.BL\\Retail.BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ismath\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ismath\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
