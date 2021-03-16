@@ -144,5 +144,25 @@ namespace Retail.BL.TEST
             //assert
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void CalculateTotal_With2000Total_Returns_1960()
+        {
+            //arrange
+            WeighProduct product = new WeighProduct()
+            {
+                ProductId = 1,
+                WeightUnit = WeightUnits.Kg,
+                ProductName = "Rice",
+                SoldPrice = 500,
+                UnitPrice = 500,
+                Weight = 4,
+                ExpirationDate = DateTime.Now
+            };
+            float expected = 1960;
+            //act
+            float result = product.CalculateTotal();
+            //assert
+            Assert.AreEqual(expected,result);
+        }
     }
 }

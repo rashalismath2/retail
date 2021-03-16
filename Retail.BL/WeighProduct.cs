@@ -9,7 +9,7 @@ namespace Retail.BL
         Kg,
         g
     }
-    public class WeighProduct : Product , IPrintable
+    public class WeighProduct : Product
     {
         public WeighProduct()
         {
@@ -42,13 +42,21 @@ namespace Retail.BL
                         total= (float)SoldPrice * (float)Weight;
                         break;
                     case WeightUnits.g:
-                        total= ((float)SoldPrice) / 1000 * (float)Weight;
+                        total= (((float)SoldPrice) / 1000) * (float)Weight;
                         break;
                     default:
                         total = 0;
                         break;
                 }
-                return total;
+
+                
+                Total = total;
+
+                CalculateDiscount();
+
+                Total -= Discount;
+
+                return (float)Total;
             }
             catch (Exception e)
             {
@@ -58,9 +66,9 @@ namespace Retail.BL
             
         }
 
-        public string Print()
+        public override string Print()
         {
-            return ProductName + " \t" + Weight +" "+WeightUnit +" \t" + SoldPrice + " \t" + CalculateTotal();
+            return ProductName + " \t\t" + Weight +" "+WeightUnit +" \t Rs." + SoldPrice +".00"+ " \t Rs." + CalculateTotal() + ".00 \t" + Discount;
         }
 
         public override bool Validate()

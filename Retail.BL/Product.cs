@@ -1,13 +1,16 @@
-﻿using System;
+﻿using Retail.COMMON;
+using System;
 
 namespace Retail.BL
 {
-    public abstract class Product
+    public abstract class Product : IPrintable
     {
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public float? SoldPrice { get; set; }
         public float? UnitPrice { get; set; }
+        public float? Total { get; set; }
+        public float? Discount { get; set; }
         private int ExpireInDays { 
             get { return 1; } 
         }
@@ -22,5 +25,18 @@ namespace Retail.BL
             return check;
             
         }
+        public float CalculateDiscount() {
+            if (Total != null && Total >= 2000)
+            {
+                Discount = (Total * 2) / 100;
+                return (float)Discount;
+            }
+            else {
+                Discount = 0;
+                return 0;
+            }
+        }
+
+        public abstract string Print();
     }
 }

@@ -49,9 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RepoTests\BillRepositoryTest.cs" />
     <Compile Include="UnitProductTest.cs" />
     <Compile Include="CustomerTest.cs" />
     <Compile Include="StringManipulationTest.cs" />
+    <Compile Include="BillTest.cs" />
     <Compile Include="WeightProductTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

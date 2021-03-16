@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Retail.BL
 {
-    public class UnitProduct : Product , IPrintable
+    public class UnitProduct : Product 
     {
         public UnitProduct()
         {
@@ -29,7 +29,12 @@ namespace Retail.BL
         {
             try
             {
-                return (int)Qty * (float)SoldPrice;
+                Total= (int)Qty * (float)SoldPrice;
+
+                CalculateDiscount();
+
+                Total = Total - Discount;
+                return (float)Total;
             }
             catch (Exception e)
             {
@@ -39,9 +44,9 @@ namespace Retail.BL
            
         }
 
-        public string Print()
+        public override string Print()
         {
-            return ProductName +" \t" + Qty+" \t"+ SoldPrice+" \t"+CalculateTotal();
+            return ProductName +" \t\t" + Qty+" \t"+ "Rs."+SoldPrice+".00"+" \t Rs."+CalculateTotal()+".00 \t"+Discount;
         }
 
         public override bool Validate()

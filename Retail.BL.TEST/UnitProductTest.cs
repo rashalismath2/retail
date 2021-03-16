@@ -107,14 +107,13 @@ namespace Retail.BL.TEST
         public void Validate_WithNonExpiredDate_Returns_true()
         {
             //arrange
-            WeighProduct product = new WeighProduct()
+            UnitProduct product = new UnitProduct()
             {
                 ProductId = 1,
-                WeightUnit = WeightUnits.Kg,
                 ProductName = "Rice",
                 SoldPrice = 90,
                 UnitPrice = 90,
-                Weight = 5,
+                Qty = 5,
                 ExpirationDate = DateTime.Now
             };
 
@@ -122,6 +121,25 @@ namespace Retail.BL.TEST
             bool result = product.Validate();
             //assert
             Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void CalculateTotal_With2000Total_Returns_1960()
+        {
+            //arrange
+            UnitProduct product = new UnitProduct()
+            {
+                ProductId = 1,
+                ProductName = "Rice",
+                SoldPrice = 500,
+                UnitPrice = 500,
+                Qty = 4,
+                ExpirationDate = DateTime.Now.AddDays(2)
+            };
+            float expected = 1960;
+            //act
+            float result = product.CalculateTotal();
+            //assert
+            Assert.AreEqual(expected, result);
         }
     }
 }

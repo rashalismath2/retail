@@ -6,32 +6,60 @@ namespace Retail.BL
 {
     public class Bill
     {
+        public Bill()
+        {
+
+        }
+        public Bill(int billId)
+        {
+            BillId = billId;
+        }
         public int BillId { get; set; }
         public DateTime BilledDate { get; set; }
         public Customer Customer { get; set; }
         public List<Product> products { get; set; }
-        public float Total { get; set; }
+        public float? Total { get; set; }
+        public float? Discount { get; set; }
+        public float? TotalProductDiscount { get; set; }
+        public float CalculateTotalProductDiscount() {
+            TotalProductDiscount = 0;
+            foreach (Product product in products)
+            {
+                TotalProductDiscount += product.Discount;
+            }
+            return (float)TotalProductDiscount;
+        }
 
-        public void CalculateTotal() {
+        public float CalculateTotal()
+        {
+            Total = 0;
             foreach (Product product in products)
             {
                 Total += product.CalculateTotal();
+
             }
+            if (Total != null)
+            {
+                CalculateDiscount();
+                Total = Total - Discount;
+                return (float)Total;
+            }
+            else return 0;
+
         }
 
         public float CalculateDiscount() {
             float discount = 0;
 
             if (Total >= 10000) {
-                discount = (Total * 5) / 100;
+                discount = ((float)Total * 5) / 100;
             }
-            else if (Total>=2000 && Total<10000) {
-                discount = (Total * 2) / 100;
-            }
-
+            Discount = discount;
             return discount;
         }
 
-        public float CalculateBalance() { }
+        public float CalculateBalance(float paid) {
+            return paid-(float)Total;
+        }
     }
 }

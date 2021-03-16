@@ -16,7 +16,6 @@ namespace Retail.BL
         public string HomeAddress { get; set; }
         public string Gender { get; set; }
 
-
         public string FullName
         {
             get {
