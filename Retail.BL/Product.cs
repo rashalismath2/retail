@@ -9,8 +9,8 @@ namespace Retail.BL
         public string ProductName { get; set; }
         public float? SoldPrice { get; set; }
         public float? UnitPrice { get; set; }
-        public float? Total { get; set; }
-        public float? Discount { get; set; }
+        public float? Total { get; protected set; }
+        public float? Discount { get; protected set; }
         private int ExpireInDays { 
             get { return 1; } 
         }

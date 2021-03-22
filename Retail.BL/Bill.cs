@@ -18,9 +18,9 @@ namespace Retail.BL
         public DateTime BilledDate { get; set; }
         public Customer Customer { get; set; }
         public List<Product> products { get; set; }
-        public float? Total { get; set; }
-        public float? Discount { get; set; }
-        public float? TotalProductDiscount { get; set; }
+        public float? Total { get; protected set; }
+        public float? Discount { get; protected set; }
+        public float? TotalProductDiscount { get; protected set; }
         public float CalculateTotalProductDiscount() {
             TotalProductDiscount = 0;
             foreach (Product product in products)

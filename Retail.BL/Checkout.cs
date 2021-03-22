@@ -10,7 +10,7 @@ namespace Retail.BL
         public static void DoCheckout(Bill bill, float paid, Cashier cashier) {
             bill.CalculateTotal();
             float balance=bill.CalculateBalance(paid);
-            bill.CalculateTotalProductDiscount()
+            bill.CalculateTotalProductDiscount();
 
             Console.WriteLine("ABC Retail");
             Console.WriteLine("--------------------------------");
